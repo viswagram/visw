@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="logo" href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSGPZsqeCPZzA0AIbEhRk-rB_iMuyfvLd05LSIQcq3l9migfhvvUtNjI7q2w_uu2qfXdTTwChuYPunUeplV5RhFNyqV=s1600">
+ <title>V.I.S.W  Memories</title>
+ <style>
+  *{
+   font-family:times;
+   box-sizing:border-box;
+   margin:0;
+   padding:0;
+  }
+  body{
+   background-image:linear-gradient(45deg,#FF0303,#A103FF,#FF0303);
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+  }
+  nav a{
+   background:transparent;
+   font-family:times;
+   text-decoration:none;
+   margin-left:25px;
+   font-size:17px;
+   color:#fff;
+   word-spacing:30px;
+  }
+  header{
+   background:#F5095C;
+   height:40px;
+   padding:8px;
+   position:fixed;
+   bottom:0;
+   width:100%;
+  }
+  nav .active{
+   background:#fff;
+   color:#F5095B;
+}
+.active{
+ height:100px;
+ z-index:2;
+}
+input{
+ margin-top:3px;
+  padding:1.1rem;
+  border:none;
+  height:45px;
+  width:100%;
+  border-radius: 47px;
+background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  9px 9px 17px #a1a1a1,
+             -8px -8px 15px #ffffff;
+             font-size:17px;
+             color:#4A4A4A;
+ }
+ ::placeholder{
+  font-family:times;
+  font-size:17px;
+  padding:1rem;
+ }
+  input:focus{
+   outline:none;
+   border-color:#00FF7B;
+  }
+  
+  /*Settings For Heading No.1*/
+  
+  h1{
+   margin-top:8px;
+   text-align:center;
+  }
+
+/*Settings For Img*/
+
+  img{
+   height:200px;
+   width:100%;
+   margin-top:15px;
+  }
+  
+    
+  /*Settings for View panel*/
+  
+  .view{
+   color:#5F5F5F;
+   font-size:5px;
+   margin-left:8px;
+   margin-top:2px;
+  }
+  footer{
+   background:#B503FF;
+   margin-top:50px;
+   height:300px;
+   width:auto;
+  }
+  span{
+   color:#1B00FF;
+   font-family:none;
+  }
+  .smss{
+   overflow:hidden;
+   height:60px;
+   width:180px;
+  }
+  .sms{
+   height:30px;
+   width:150px;
+   font-family:Times;
+   background:#1B00FF;
+   color:#fff;
+   border-radius:20px;
+   position:fixed;
+   align-items:center;
+   justify-content:center;
+   text-align:center;
+   padding:5px;
+   top:85%;
+   right:20%;
+   overflow:hidden;
+   animation:sms 0.6s linear infinite alternate;
+  }
+  .sms:before{
+   content:"";
+   height:0;
+   width: 0;
+   overflow:hidden;
+   z-index:1;
+   position:fixed;
+   top:85.4%;
+   right:16%;
+   transform:rotate(90deg);
+   border-left:10px solid transparent;
+   border-right:10px solid transparent;
+   border-bottom:23px solid #1B00FF;
+   animation:smss 0.6s linear infinite alternate;
+  }
+  @keyframes sms{
+  100%{
+    top:83.6%;
+   }
+  }
+  @keyframes smss{
+   100%{
+    top:84%;
+   }
+  }
+  .smsss{
+   border-style:none;
+   position:fixed;
+   top:83%;
+   right:17.2%;
+   height:40px;
+   font-size:20px;
+   width:40px;
+   background:transparent;
+   color:#ccc;
+   animation:smsss 0.6s linear infinite  alternate;
+  }
+  @keyframes smsss{
+   100%{
+    top:81.7%;
+   }
+  }
+  
+  /*Settings For Desktops*/
+  
+@media screen and (min-width:400px){
+ nav a{
+  margin-left:83px;
+  font-size:40px;
+ }
+ header{
+  padding-top:18px;
+  position:fixed;
+  height:5%;
+  width:100%;
+ }
+ img{
+  height:500px;
+ }
+}
+ </style>
+</head>
+<body>
+ <header>
+  <nav>
+   <a href="#" class="active" height="100px">B&G</a>
+   <a href="personal.html">PerPic</a>
+   <a href="#" onclick="alert('Not working')">Videos</a>
+   <a href="#">PerVid</a>
+  </nav>
+ </header>
+ <main>
+  <input type="search" placeholder="Search by id..." id="searchInput"/>
+  
+          <!--Set up for logo-->
+          
+<img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSGPZsqeCPZzA0AIbEhRk-rB_iMuyfvLd05LSIQcq3l9migfhvvUtNjI7q2w_uu2qfXdTTwChuYPunUeplV5RhFNyqV=s1600" style="border-radius:50%;height:40px;width:40px"/>
+
+  <!--Set up for may i help you gif-->
+  
+<a href="chatbot.html"><img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRKZXeRpOqalql5tawOaJZYSBRM0zvAVxlRRzNK4By1oM_timjwGPa45OSV8apLmIrjAUdUFALQDRVxCEHcfFCEm4q6-g=s2560" style="height:50px;width:50px; position:fixed;right:3%;top:80%"></a>
+
+  <h1>Children Day</h1>
+  
+  <!--Dashe bhanja-->
+  
+<a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTmLtim0-cbaukynaoqi8XY4YAz_k7N2TpWEf56JXCn2-n9nNhxGi2QYEc1RHSedR0gYwtakFU3ErJd1S6Sufv6mpUXRw=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTmLtim0-cbaukynaoqi8XY4YAz_k7N2TpWEf56JXCn2-n9nNhxGi2QYEc1RHSedR0gYwtakFU3ErJd1S6Sufv6mpUXRw=s1600" id="pic1" /> </a>
+
+  <p style="margin-left:8px">Children Day Pic1 2023|| In Hostel ||Rahul || Aryan || Nitesh.K</p>
+  <p id="pic1" class="view">view:50.1k</p>
+  
+  <!--Chhatria-->
+  
+  <a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTNAkAliF4MP9em_Mx7jlOqw3-_855MmPET2qhTURkAh4C1Fg6Z5q_RYqh-ZKUjF-3iNeh2bTZjekZuI4t6WkXC1SzHXw=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTNAkAliF4MP9em_Mx7jlOqw3-_855MmPET2qhTURkAh4C1Fg6Z5q_RYqh-ZKUjF-3iNeh2bTZjekZuI4t6WkXC1SzHXw=s1600" id="pic2"/> </a>
+  <p style="margin-left:8px">Children Day Pic2 2023|| In Hostel || Rahul ||Nitesh.K.C || Aryan</p>
+  <p id="pic2" class="view">View:50k</p>
+  
+  <!--Hari-->
+  
+  <a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQb8YIWDhUWr2EGWvWUEg-g0WtzvQ4YTLq-xsmPtPohkyvxXZYOUFSPodq8aqL_-vHPHlxjJk8rK4kOz13XJbsv_PNCHg=s2560?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQb8YIWDhUWr2EGWvWUEg-g0WtzvQ4YTLq-xsmPtPohkyvxXZYOUFSPodq8aqL_-vHPHlxjJk8rK4kOz13XJbsv_PNCHg=s2560" id="pic3"/> </a>
+  <p style="margin-left:8px">Children Day Pic3 2023|| In Hostel || Rahul || Debasish.S.M || Tikeswar.H || Subham.P || Anmol.S</p>
+  <p id="pic3" class="view">View:48.2k</p>
+  
+  <!--Aryan-->
+  
+  <a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQFXlgANgR123b7vYDJfjIbTPw8Jb88Zv20TQsCznrOQeIPdUFBNrq1IxxTiUmnlsaCSjDzis45WT20qTSgtGzFl0Yl5g=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQFXlgANgR123b7vYDJfjIbTPw8Jb88Zv20TQsCznrOQeIPdUFBNrq1IxxTiUmnlsaCSjDzis45WT20qTSgtGzFl0Yl5g=s1600" id="pic4"/> </a>
+  <p style="margin-left:8px">Children Day Pic4 2023|| In Hostel || Rahul.K || Nitesh.K.C || Anmol.S || Aryan</p>
+  <p id="pic4" class="view">View:45.8k</p>
+  
+  <!--Smily-->
+  
+  <a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTsgxuzcaMFqXlKnE1JzcnVK2MMWGTjzeLyK6wKfM7GyUzf1WcAiMSsNHqLEucYlzCnvdPvszmyKJkv2F--DIO2EhF64w=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTsgxuzcaMFqXlKnE1JzcnVK2MMWGTjzeLyK6wKfM7GyUzf1WcAiMSsNHqLEucYlzCnvdPvszmyKJkv2F--DIO2EhF64w=s1600" id="pic5"/> </a>
+  <p style="margin-left:8px;">Children Day Pic5 2023😂|| Mulki Hasi || Rahul.K || Nitesh.K.C || Aryan</p>
+  <p id="pic5" class="view">View:45.5k</p>
+<div class="smss">
+<div class="sms" id="show">May I help you?</div>
+</div>
+<button type="button" onclick="toggleVisibility()" class="smsss" id="toggleButton">&times;</button>
+
+ </main>
+ <script>
+function toggleVisibility() {
+  var div = document.getElementById('show');
+  var button = document.getElementById('toggleButton');
+
+  div.style.display = (div.style.display === 'none') ? 'block' : 'none';
+  button.style.display = 'none';
+}
+</script>
+<script>
+  function jumpToElement() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const element = document.getElementById(searchInput);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      alert('Element not found!');
+    }
+  }
+
+  document.getElementById('searchInput').addEventListener('search', jumpToElement);
+</script>
+
+
+ <footer>
+ <pre>
+                    Memories of your life,
+                            Memories of your Times
+  
+  
+        &#128222;Contact Us
+  
+      <i>I'm here to assist 24/7</i>
+  
+ for customer-support:<a href="mailto:rahulkumbhar9087@gmail.com" style="text-decoration:none;">mail us</a>
+ 
+ 
+                  <span>🌐 VISWAGRAM </span>| &copy;2024-25
+                  
+                  
+                  </pre>
+ </footer>
+</body>
+</html>

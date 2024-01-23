@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Care Chatbot</title>
+  <style>
+  body{
+   position:fixed;
+   background:#B503FF;
+   width:10%;
+   height:80vh;
+  }
+   #chatbox {
+  width: 95%;
+  position:fixed;
+  top:10%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+ 
+  border-radius: 5px;
+  box-shadow:  3px 3px 9px #2F2F2F,
+             -3px -3px 5px #FFFFFF;
+}
+
+#chat {
+  height: 280px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+
+input {
+  position:absolute;
+  margin-top:2%;
+  top:100%;
+  width: 78%;
+  height:30px;
+  padding: 5px;
+  border:3px solid #2E2E2E;
+  border-radius: 2px;
+ background: linear-gradient(145deg, #8d07c6, #a809eb);
+box-shadow:  4px 5px 10px #000,
+             -2px -2px 8px #fff;
+}
+input:focus{
+ outline:none;
+ border:3px solid #2E2E2E;
+}
+
+
+button {
+  height:40px;
+  width: 40px;
+  border-radius:50%;
+  margin-right:0;
+  position:absolute;
+  top:100%;
+  margin-top:5.5%;
+  left:87%;
+  font-size:35px;
+  background:black;
+  color:#fff;
+  padding-top:0;
+  border:none;
+  border-radius: 50%;
+box-shadow:  5px 5px 9px #212121,
+             -1px -1px 9px #ffffff;
+}
+b{
+ position:absolute;
+ bottom:0;
+ top:;
+ left:27%;
+}
+.container{
+ position:fixed;
+ top:0;
+ left:0;
+ height:63px;
+ width:100%;
+ background:#9D08DC;
+ border-bottom:2px solid #7A08AA;
+ box-shadow:0 0 15 8px solid #7A08AA;
+}
+.care{
+ height:50px;
+ width:50px;
+ position:fixed;
+ top:0.8%;
+ left:9%
+}
+.caregola{
+ margin-left:8%;
+ background:black;
+ height:60px;
+ width:60px;
+ border-radius: 150px;
+background: linear-gradient(145deg, #8d07c6, #a809eb);
+box-shadow:  5px 5px 10px #8107b4,
+             -5px -5px 10px #b909ff;
+}
+span{
+ font-size:19px;
+ font-family:Times;
+ position:absolute;
+ right:53%;
+ color:#181818;
+ top:30%;
+}
+.s2{
+ position:absolute;
+ font-size:5px;
+ top:60%;
+ right:52%;
+}
+ footer{
+   background: red/*#B503FF*/;
+   position:absolute;
+   top:90%;
+   height:300px;
+   width:100%;
+  }
+  .arrow{
+   position:absolute;
+   transform:rotate(-90deg);
+   color:#fff;
+   top:5%;
+   right:47%;
+   font-size:30px;
+   
+  }
+  </style>
+</head>
+<body>
+ <header></header>
+ <main>
+ <div class="container">
+<img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRKZXeRpOqalql5tawOaJZYSBRM0zvAVxlRRzNK4By1oM_timjwGPa45OSV8apLmIrjAUdUFALQDRVxCEHcfFCEm4q6-g=s2560" class="care"/>
+<div class="caregola"></div><span>ChatBot</span>
+<span class="s2">By &copy;RahulKumbhar</span>
+
+</div>
+<div id="chatbox">
+  <div id="chat"></div>
+  <div class="input">
+  <input type="text" id="userInput" placeholder="Type your message...">
+  <button onclick="sendMessage()">
+<b>&#x2191;</b></button></div>
+</div>
+<div class="arrow"><a href="index.html"><b>&#x2191;</a></b></div>
+</main>
+<hr>
+ <pre style="position:relative;top:70%;bottom:0;margin-top:150%">
+  
+
+
+   
+   
+   
+   
+   
+
+
+
+   
+   
+            🌐 VISWAGRAM | &copy;2024          
+ </pre>
+</span>
+<script>
+ const chatbox = document.getElementById('chat');
+const userInput = document.getElementById('userInput');
+
+function sendMessage() {
+  const userMessage = userInput.value;
+  displayMessage('user', userMessage);
+   
+  
+  if(userMessage === ''){
+   alert('please Enter a Message before sending');
+  
+   return;const userMessage=userInput.value.trim();
+  }
+
+  // Simulate a response from the chatbot (you can replace this with your backend logic)
+  const botResponse = getBotResponse(userMessage);
+  displayMessage('bot', botResponse);
+
+  // Clear the input field
+  userInput.value = '';
+}
+
+function displayMessage(sender, message) {
+  const messageElement = document.createElement('div');
+  
+  // Append 'You' for user messages and 'Bot' for bot messages
+  const displayName = (sender === 'user') ? 'You' : 'Bot';
+  
+  messageElement.classList.add(sender);
+  messageElement.textContent = `${displayName}: ${message}`;
+  chatbox.appendChild(messageElement);
+
+  // Scroll to the bottom to show the latest message
+  chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+function getBotResponse(userMessage) {
+  const responses = {
+   'hello': 'Hi there! How can I help you?',
+   'hi':'Hi there! How can I help you?',
+   'who created you':'I\'m a ChatBot Created on 21/01/2024 by Rahul Kumbhar',
+   'why girls button is not working?':'Because admin have no imgaes or vid',
+   'thank you':'you are welcome🤗',
+   'thanks' : 'you are welcome',
+   'tukel mankar button kenta nai chalbar bo':'malik ra pakhe photo nai9 ho tankar',
+   'sate':'hn',
+   'dekhsa kn':'hae',
+   'au bhanja':'hn ho mamu',
+   'sex dekhsa kn':'tume bhi ta ho kada/kara katha kahesa',
+   'tamar website ke hack karmi kn':'kar tate kie mana kala',
+    'how are you': 'I am just a bot, but thanks for asking!',
+    'default': 'I didn\'t understand that. Can you please rephrase?',
+  };
+
+  const lowercaseUserMessage = userMessage.toLowerCase();
+  const caseInsensitiveResponse = responses[lowercaseUserMessage] || responses['default'];
+  
+  return caseInsensitiveResponse;
+}
+</script>
+
+</body>
+</html>

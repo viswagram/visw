@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="logo" href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSGPZsqeCPZzA0AIbEhRk-rB_iMuyfvLd05LSIQcq3l9migfhvvUtNjI7q2w_uu2qfXdTTwChuYPunUeplV5RhFNyqV=s1600">
+ <title>B&G - Boys and Girls pic</title>
+ <style>
+   *{
+   font-family:times;
+   box-sizing:border-box;
+   margin:0;
+   padding:0;
+  }
+  body{
+   background-image:linear-gradient(45deg,#FF0303,#A103FF,#FF0303);
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+  }
+  
+       /*Set up for Nav bar*/
+       
+  nav a{
+   background:transparent;
+   font-family:times;
+   text-decoration:none;
+   margin-left:25px;
+   font-size:17px;
+   color:#fff;
+   word-spacing:30px;
+  }
+  
+      /*Set up for Nav bar head*/
+      
+  header{
+   background:#F5095C;
+   height:40px;
+   padding:8px;
+   position:fixed;
+   bottom:0;
+   width:100%;
+   overflow:hidden;
+  }
+  
+  
+  nav .active{
+   background:#fff;
+   color:#F5095B;
+}
+input{
+ margin-top:3px;
+  padding:1.1rem;
+  border:none;
+  height:45px;
+  width:100%;
+  border-radius: 47px;
+background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  9px 9px 17px #a1a1a1,
+             -8px -8px 15px #ffffff;
+             font-size:17px;
+             color:#4A4A4A;
+ }
+ ::placeholder{
+  font-family:times;
+  font-size:17px;
+  padding:1rem;
+ }
+  input:focus{
+   outline:none;
+   border-color:#00FF7B;
+  }
+  .boys{
+   position:fixed;
+   top:15%;
+   left:1px;
+   right:10%;
+   border:none;
+   border-radius:5px;
+   background:linear-gradient(55deg,red,blue);
+   color:#fff;
+   height:20px;
+   width:40px;
+  }
+  .girls{
+   top:15%;
+   left:12%;
+   position:fixed;
+   border:none;
+   border-radius:5px;
+   height:20px;
+   width:40px;
+   color:#FFFFFF;
+   background:linear-gradient(55deg,red,blue);
+  }
+  img{
+   height:200px;
+   width:100%;
+   margin-top:20px;
+  }
+   .view{
+   color:#B6B6B6;
+   font-size:5px;
+   margin-left:8px;
+   margin-top:2px;
+  }
+  h1{
+   margin-top:0;
+   text-align:center;
+  }
+   footer{
+   background:#B503FF;
+   margin-top:50px;
+   height:300px;
+   width:auto;
+  }
+  .smss{
+   overflow:hidden;
+   height:60px;
+   width:180px;
+  }
+  .sms{
+   height:30px;
+   width:150px;
+   font-family:Times;
+   background:#1B00FF;
+   color:#fff;
+   border-radius:20px;
+   position:fixed;
+   align-items:center;
+   justify-content:center;
+   text-align:center;
+   padding:5px;
+   top:85%;
+   right:20%;
+   overflow:hidden;
+   animation:sms 0.6s linear infinite alternate;
+  }
+  .sms:before{
+   content:"";
+   height:0;
+   width: 0;
+   overflow:hidden;
+   z-index:1;
+   position:fixed;
+   top:85.4%;
+   right:16%;
+   transform:rotate(90deg);
+   border-left:10px solid transparent;
+   border-right:10px solid transparent;
+   border-bottom:23px solid #1B00FF;
+   animation:smss 0.6s linear infinite alternate;
+  }
+  @keyframes sms{
+  100%{
+    top:83.6%;
+   }
+  }
+  @keyframes smss{
+   100%{
+    top:84%;
+   }
+  }
+  .smsss{
+   border-style:none;
+   position:fixed;
+   top:83%;
+   right:17.2%;
+   height:40px;
+   font-size:20px;
+   width:40px;
+   background:transparent;
+   color:#ccc;
+   animation:smsss 0.6s linear infinite  alternate;
+  }
+  @keyframes smsss{
+   100%{
+    top:81.7%;
+   }
+  }
+    /*Settings For Desktops*/
+  
+@media screen and (min-width:400px){
+ nav a{
+  margin-left:83px;
+  font-size:40px;
+ }
+ header{
+  padding-top:18px;
+  position:fixed;
+  height:5%;
+  width:100%;
+ }
+ img{
+  height:500px;
+ }
+}
+ </style>
+</head>
+<body>
+ <header>
+<nav>
+ <a href="index.html">B&G</a>
+ <a href="#" class="active">PerPic</a>
+ <a href="#" onclick="alert('Thos is not working')">Video</a>
+ <a href="#" onclick="alert('This is not working')">PerVid</a>
+</nav>
+
+</header>
+<main>
+ 
+      <!--Set up for Search box-->
+     
+ <input type="search" placeholder="Search by id..." id="searchInput"/>
+ 
+         <!--Set up for logo-->
+         
+ <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSGPZsqeCPZzA0AIbEhRk-rB_iMuyfvLd05LSIQcq3l9migfhvvUtNjI7q2w_uu2qfXdTTwChuYPunUeplV5RhFNyqV=s1600" style="border-radius:50%;height:40px;width:40px"/>
+ 
+    <!--Set up for Gender/Category-->
+    
+ <a href="#"><button type="button" class="boys">Boys</button></a>
+<button type="button" class="girls" onclick="alert('Girls Button Is Not Working For Now Because Of Empty Images🥲')">Girls</button>
+
+
+<!--Heading-->
+
+<h1>Boys</h1>
+
+<!--Dashe1-->
+
+<a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR9myUlw0-wthiRf_hgEGSHemrr67FbuzowL7GNUmDtWX0yCpL4TKkIxBf0eh9AnSz1jzTZzCE_4S-NE77eTDB4j5k2nA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR9myUlw0-wthiRf_hgEGSHemrr67FbuzowL7GNUmDtWX0yCpL4TKkIxBf0eh9AnSz1jzTZzCE_4S-NE77eTDB4j5k2nA=s1600" id="pic1"/> </a>
+
+              <!--Title-->
+           
+<p style="margin-left:8px">Enjoyment In Hostel🤟✨ ||Jagjeet.S || Rahul.K || Debasish.S || Barun || Jack || Tikeswar.H || Niroj.B || Pic1</p>
+
+               <!--View-->
+
+<p id="pic1" class="view">View:67.8k</p>
+
+            <!--Chhatar-->
+
+<a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTeqTmnYqtx1mQjRQ8rVR_f7e5FfxDDn4ox4eP1ZosjAJbhrS_5jeRy8g5Y1ZBkRml4hP2y8qh59tEOmjDPDEInP53ydg=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTeqTmnYqtx1mQjRQ8rVR_f7e5FfxDDn4ox4eP1ZosjAJbhrS_5jeRy8g5Y1ZBkRml4hP2y8qh59tEOmjDPDEInP53ydg=s1600" id="pic2" /> </a>
+
+             <!--Title-->
+             
+<p style="margin-left:8px">With Friends✨🤟 || Rahul.K || Debasish.S || Ntesh.K || Barun.B || Jack.L || Jagjeet.S || Niroj.B || Tikeswar.H || Pic2</p>
+
+             <!--Title-->
+             
+<p id="pic2" class="view">View:66.4k</p>
+
+             <!--Subham.P-->
+
+<a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQw9NU2_cnnLaop-BZxkt8iy0Cva7ST-JxgBnfjqy5RrU5B2lbuU-PzbIU5iwZmtFLrfvYs8hen9m4M6wUzgYn-BAdu=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQw9NU2_cnnLaop-BZxkt8iy0Cva7ST-JxgBnfjqy5RrU5B2lbuU-PzbIU5iwZmtFLrfvYs8hen9m4M6wUzgYn-BAdu=s1600" id="pic3" /></a>
+
+              <!--Title-->
+
+<p style="margin-left">Duo Pic🤝 || Subham.P || Nitesh.K || Pic3</p>
+
+                <!--Title-->
+                
+<p id="pic3" class="view">View:55.1k</p>
+
+           <!--Mamu Bhanja-->
+
+<a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQh_lLVmsqNbQ_qX7qwKqoFtamzDMvJEomiqQgNGG0wyblL_psKHMkE0ionL4YuHZ-9D0u31yDT73tvyOXUhSEbihS4=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQh_lLVmsqNbQ_qX7qwKqoFtamzDMvJEomiqQgNGG0wyblL_psKHMkE0ionL4YuHZ-9D0u31yDT73tvyOXUhSEbihS4=s1600" id="pic4"/> </a>
+
+              <!--Title-->
+
+<p class="margin-left:8px">Mamu Bhanja✨😁 || Rahul.K || Debasish .S || Pic4</html></html></p>
+
+            <!--View-->
+            
+<p id="pic4" class="view">View:55.3k</p>
+
+             <!--Pritam-->
+
+<a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSWOo7RjJuLZ6-llDIYOgjEZENhBH3e86_Z5ZI1s657nWXQQzcuE8FgsHgofpVa9YnIhzKjA-wg5bsvSKs9nrM0fmnKqA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSWOo7RjJuLZ6-llDIYOgjEZENhBH3e86_Z5ZI1s657nWXQQzcuE8FgsHgofpVa9YnIhzKjA-wg5bsvSKs9nrM0fmnKqA=s1600" style="height:250px" id="pic5"/> </a>
+
+.          <!--Title-->
+
+<p style="margin-left:8px;">Duo Pic2✨ || Subham.P || Pritam.S || Debasish.j || Pic5</p>
+<p id="pic5" class="view">View:45.8k</p>
+<!--Niroj-->
+
+
+<a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxnHx9cTuyecDZa5UqNEqfl58C5ZTyY9yp7IKbbLKwrePfT4c8GeGa_QYOipnR3-nVN3L32BMBR1_60-A_YqfN0CQTUw=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxnHx9cTuyecDZa5UqNEqfl58C5ZTyY9yp7IKbbLKwrePfT4c8GeGa_QYOipnR3-nVN3L32BMBR1_60-A_YqfN0CQTUw=s1600" /> </a>
+
+             <!--Title-->
+             
+<p style="margin-left:8px;">With Buda Partner✨ || Rahul.K || Debasish.S || Niroj.B || Pic6</p>
+
+              <!--view-->
+              
+<p id="pic6" class="view">View:45.8k</p>
+
+        <!--With buda partner2-->
+
+<a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRW7M9sN9Ek687dzpy7o5xkwWuzBAmMJA02aWpMTm7ZfENo6yEfaqJ7dmsQIPPbxCfOumpDIM-1X-KPd6NRCZ1IOFj5RA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRW7M9sN9Ek687dzpy7o5xkwWuzBAmMJA02aWpMTm7ZfENo6yEfaqJ7dmsQIPPbxCfOumpDIM-1X-KPd6NRCZ1IOFj5RA=s1600" id="pic6"/> </a>
+<p style="margin-left:8px;">With buda partner 2💫 || Rahul.K || Debasish.S || Niroj.B || Pic7</p>
+<p id="pic7" class="view">View:44.9k</p>
+
+
+   <!--Set up for My i help you gif-->
+   
+<a href="chatbot.html"><img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRKZXeRpOqalql5tawOaJZYSBRM0zvAVxlRRzNK4By1oM_timjwGPa45OSV8apLmIrjAUdUFALQDRVxCEHcfFCEm4q6-g=s2560" style="height:50px;width:50px;position:fixed;top:80%;right:3%"/></a> 
+<div class="smss">
+<div class="sms" id="show">May I help you?</div>
+</div>
+<button type="button" onclick="toggleVisibility()" class="smsss" id="toggleButton">&times;</button>
+
+</main>
+
+      <!--Set up for Close button-->
+<script>
+function toggleVisibility() {
+  var div = document.getElementById('show');
+  var button = document.getElementById('toggleButton');
+
+  div.style.display = (div.style.display === 'none') ? 'block' : 'none';
+  button.style.display = 'none';
+}
+</script>
+<script>
+  function jumpToElement() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const element = document.getElementById(searchInput);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      alert('Element not found!');
+    }
+  }
+
+  document.getElementById('searchInput').addEventListener('search', jumpToElement);
+</script>
+<script>
+ alert("I'm happy to say that the search option in it is now working so enjoy.But it only be searched by number of pic(e.g.'pic1')")
+</script>
+
+         <!--Set up for footer-->
+
+<footer>
+  <pre>
+                    Memories of your life,
+                            Memories of your Times
+  
+  
+        &#128222;Contact Us
+  
+      <i>I'm here to assist 24/7</i>
+  
+ for customer-support:<a href="mailto:rahulkumbhar9087@gmail.com" style="text-decoration:none;">mail us</a>
+ 
+ 
+                  <span>🌐 VISWAGRAM </span>| &copy;2024-25
+                  
+                  
+                  </pre>
+</footer>
+</body>
+
+</html>
